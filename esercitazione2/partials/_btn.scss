@@ -1,0 +1,19 @@
+$btncolor-map: ( 
+  uno: #0e6cff, 
+  due: #ff8700, 
+  tre: #4caf50, 
+);
+//ciclo la mappa dei valori
+@each $numero, $color in $btncolor-map {
+    .btn-#{$numero} {
+        background-color: #{$color};
+    }
+}
+
+.btn {
+  border-radius: 1em;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(255, 0, 0);
+  }
+}

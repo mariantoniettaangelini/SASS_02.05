@@ -1,0 +1,15 @@
+.headline {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: $background-color;
+    color: $text-color;
+        p {
+            max-width: 500px;
+        }
+
+        img {
+            max-width: 200px;
+        }
+}
+
