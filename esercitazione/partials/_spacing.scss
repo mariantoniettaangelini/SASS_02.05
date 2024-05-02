@@ -1,0 +1,26 @@
+$margin-map: ( 
+  xs: 10px,
+  md: 25px,
+  lg: 35px,
+  xl: 50px,
+);
+
+@each $size, $value in $margin-map {
+    .margin-#{$size} {
+        margin: #{$value};
+    }
+}
+
+$padding-map: ( 
+  xs: 5px,
+  md: 10px,
+  lg: 20px,
+  xl: 30px,
+);
+
+@each $size, $value in $padding-map {
+    .padding-#{$size} {
+        padding: #{$value};
+    }
+};
+
